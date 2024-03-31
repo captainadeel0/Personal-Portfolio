@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
 
     // Prepare SQL statement to insert data into the table
-    $sql = "INSERT INTO clients (name, email, age, profession, address) 
+    $sql = "INSERT INTO clients (`name`, email, age, profession, address) 
             VALUES ('$name', '$email', '$age', '$profession', '$address')";
 
 $result = mysqli_query($conn, $sql);
